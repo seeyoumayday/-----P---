@@ -73,9 +73,6 @@ main {
 }
 
 section {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin-bottom: 2rem;
 }
@@ -93,10 +90,6 @@ footer {
 .member {
     text-align: center;
     margin-bottom: 2rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
     transition: transform 0.2s;
 }
 
@@ -119,13 +112,13 @@ footer {
 
 @media (min-width: 1024px) {
     main {
-        display: flex;
-        justify-content: space-between;
+        /* Remove the flexbox layout */
+        display: block;
     }
 
     section {
-        flex: 1;
-        margin: 1rem;
+        /* Adjust margin to center sections */
+        margin: 1rem auto;
     }
 }
 
