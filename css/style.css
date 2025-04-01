@@ -272,6 +272,11 @@ section h2 {
     margin-top: 40px;
 }
 
+.member-item {
+    display: block;
+    width: 100%;
+}
+
 .member-card {
     background-color: #fff;
     border-radius: 10px;
@@ -320,6 +325,129 @@ section h2 {
 
 .member-links a {
     font-size: 0.9rem;
+    position: relative;
+    z-index: 10;
+}
+
+.member-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+/* display: contents を使用できない古いブラウザ用の代替スタイル */
+@supports not (display: contents) {
+    .member-link {
+        display: block;
+        width: auto;
+    }
+    
+    .member-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* メンバー詳細ページ */
+.member-detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.member-profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.member-profile-image {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.member-profile-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+.member-profile-info h2 {
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.member-bio {
+    margin-bottom: 30px;
+    white-space: pre-line;
+}
+
+.member-featured-works {
+    margin-top: 50px;
+}
+
+.member-featured-works h3 {
+    font-size: 1.8rem;
+    color: #5d7cf9;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.work-item-detail {
+    margin-bottom: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.work-item-detail h4 {
+    font-size: 1.5rem;
+    color: #5d7cf9;
+    margin-bottom: 15px;
+}
+
+.work-youtube-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9のアスペクト比 */
+    height: 0;
+    margin-bottom: 20px;
+}
+
+.work-youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.work-description {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #5d7cf9;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    background-color: #3a59e0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 /* 注目作品セクション */

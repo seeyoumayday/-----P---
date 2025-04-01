@@ -57,6 +57,18 @@ document.addEventListener('DOMContentLoaded', function() {
             youtubeId: "MLtIQKxG0fU",
             creator: "五月一日",
             description: "感情が孤独で大切だからこそ、誰か大切な人やモノが失われることは、「その人やモノの感情や考えている唯一無二のモノが失われること」と同義で、とても辛いことだと思っています。亡くなった愛犬を想って、冷たい秋の風の中に書いた歌です"
+        },
+        {
+            title: "大人に",
+            youtubeId: "JmPd8G_9n2o",
+            creator: "Auauo",
+            description: "苦しいよ♪苦しいよ♪苦しい♪"
+        },
+        {
+            title: "バレてたらどうしよう",
+            youtubeId: "BAr50BKIQ8Y",
+            creator: "Auauo",
+            description: "なんか知らないけど一番伸びてるやつ！なんで？"
         }
     ];
     
